@@ -42,6 +42,12 @@ li {
     display: flex;
 }
 
+.container_side_top {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
+
 .d_column {
     flex-direction: column;
 }
@@ -122,7 +128,7 @@ li {
     height: 200px;
 }
 
-.debug .user {
+.debug .user_info {
     height: 50px;
 }
 
@@ -150,8 +156,8 @@ li {
     height: 100%;
     background-color: var(--dark);
     align-items: center;
-    justify-content: space-between;
     color: var(--primarygrey);
+    justify-content: space-between;
     font-size: 10px;
 }
 
@@ -160,6 +166,7 @@ li {
     padding: 1rem;
 }
 
+/* sezione navbar */
 .side_functions {
     align-items: center;
 }
@@ -168,6 +175,7 @@ li {
     width: 20px;
 }
 
+/* sezione playlist */
 .playlist_function {
     color: var(--primarygrey);
 }
@@ -182,6 +190,26 @@ li {
 
 .new_playlist li {
     padding: 5px 0;
+}
+/* sezione user */
+.app_dl img,
+.user_name img {
+    width: 15px;
+}
+
+.user_name img {
+    background-color: var(--primarygrey);
+    height: 20px;
+    width: 20px;
+    border-radius: 1rem;
+}
+
+.app_dl, .user_name {
+    align-items: center;
+}
+
+.user_name {
+    border-top: 1px solid var(--primarygrey);
 }
 
 .upgrade {
