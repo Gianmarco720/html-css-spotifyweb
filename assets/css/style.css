@@ -176,6 +176,11 @@ li {
     width: 20px;
 }
 
+.lens, 
+.library {
+    filter: invert(80%) sepia(2%) saturate(112%) hue-rotate(336deg) brightness(85%) contrast(93%);
+}
+
 /* sezione playlist */
 .playlist_function {
     color: var(--primarygrey);
@@ -219,6 +224,7 @@ li {
 }
 
 .user_name {
+    color: var(--light);
     padding: 15px 0 10px 0;
     border-top: 1px solid var(--primarygrey);
 }
