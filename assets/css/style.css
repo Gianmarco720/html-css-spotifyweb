@@ -10,3 +10,11 @@ img {
 }
 
 /* color palette */
+:root {
+    --dark: #000000;
+    --lightdark: #282828;
+    --primarygrey: #7D7F84;
+    --check: #ADFF2F;
+    --lightprimary: #D2D2D2;
+    --light: #FFFFFF;
+}
