@@ -18,3 +18,98 @@ img {
     --lightprimary: #D2D2D2;
     --light: #FFFFFF;
 }
+
+/* #region utility */
+.row {
+    display: flex;
+}
+
+.container_fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+
+}
+
+/* colonne */
+.col_1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col_7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col_10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+    width: calc(100% / 12 * 12);
+}
+/* #endregion utility */
+
+/* #region debug */
+[class^="col_"] {
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.debug .logo,
+.debug .side_nav,
+.debug .playlist,
+.debug .user {
+    margin: 1rem;
+    border: 1px solid;
+    width: 90px;
+}
+
+.debug .logo {
+    height: 50px;
+}
+
+.debug .side_nav {
+    height: 70px;
+}
+
+.debug .playlist {
+    height: 200px;
+}
+
+.debug .user {
+    height: 50px;
+}
