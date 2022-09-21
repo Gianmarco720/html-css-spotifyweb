@@ -24,13 +24,8 @@ img {
     display: flex;
 }
 
-.container_fluid {
+.d_flex {
     display: flex;
-    flex-direction: column;
-}
-
-.wrapper {
-
 }
 
 /* colonne */
@@ -89,6 +84,7 @@ img {
     border: 1px solid red;
 }
 
+/* debug sidebar */
 .debug .logo,
 .debug .side_nav,
 .debug .playlist,
@@ -112,4 +108,26 @@ img {
 
 .debug .user {
     height: 50px;
+}
+
+/* debug main */
+.debug .upgrade {
+    width: 100%;
+    border: 1px solid;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.debug .button {
+    height: 20px;
+    width: 100px;
+    border: 1px solid;
+}
+/* #endregion debug */
+.sidebar {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
