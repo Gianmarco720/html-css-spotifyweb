@@ -18,10 +18,12 @@
     <div class="wrapper">
         <div class="row">
             <div class="col_1 main_content">
-                <div class="sidebar d_flex">
+                <div class="sidebar d_flex d_column">
+                    <!-- logo -->
                     <div class="logo">
                         <img src="./assets/img/logo.svg" alt="Spotify logo">
                     </div>
+                    <!-- navigazione laterale -->
                     <div class="side_nav">
                         <div class="side_functions d_flex gap5">
                             <img src="./assets/img/home.svg" alt="House"><a href="#">Home</a>
@@ -33,11 +35,23 @@
                             <img src="./assets/img/libreria.svg" alt="Library"><a href="#">La tua libreria</a>
                         </div>
                     </div>
+                    <!-- sezione playlist -->
                     <div class="playlist">
                         <h3>PLAYLIST</h3>
-                        <div class="playlist_function d_flex gap5">
-                            <i class="fa-solid fa-square-plus"></i>
-                            <a href="#">Crea Playlist</a>
+                        <div class="playlist_function d_flex d_column">
+                            <div class="create_playlist gap5 d_flex">
+                                <i class="fa-solid fa-square-plus"></i>
+                                <a href="#">Crea Playlist</a>
+                            </div>
+                            <ul class="new_playlist">
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="user"></div>

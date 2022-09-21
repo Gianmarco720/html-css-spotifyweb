@@ -30,12 +30,20 @@ a {
     font-weight: 700;
 }
 
+li {
+    list-style-type: none;
+}
+
 .row {
     display: flex;
 }
 
 .d_flex {
     display: flex;
+}
+
+.d_column {
+    flex-direction: column;
 }
 
 .gap5 {
@@ -141,7 +149,6 @@ a {
 .sidebar {
     height: 100%;
     background-color: var(--dark);
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: var(--primarygrey);
@@ -162,12 +169,19 @@ a {
 }
 
 .playlist_function {
-    align-items: center;
     color: var(--primarygrey);
+}
+
+.create_playlist {
+    align-items: center;
 }
 
 .fa-square-plus {
     font-size: 37px;
+}
+
+.new_playlist li {
+    padding: 5px 0;
 }
 
 .upgrade {
