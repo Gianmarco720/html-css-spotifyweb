@@ -580,5 +580,17 @@ li {
     .user_name {
         border: 0;
     }
+
+    .album_options {
+        padding: 0 0 0 20px;
+    }
+
+    .control_right {
+        width: 25%;
+    }
+
+    .volume_level {
+        width: 40%;
+    }
 }
 /* #endregion responsive */
