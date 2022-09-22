@@ -18,6 +18,8 @@ img {
     --lightprimary: #D2D2D2;
     --light: #FFFFFF;
     --primaryback: #141922;
+    --progressbar: #5A5A5A;
+    --progressbar2: #C1C1C1;
 }
 
 /* #region utility */
@@ -376,6 +378,40 @@ li {
 
 #artist {
     font-size: 12px;
+}
+
+.control_middle {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.player_buttons {
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.player_time {
+    align-items: center;
+}
+
+.player_time span {
+    color: var(--light);
+    font-size: 12px;
+}
+
+.time_bar {
+    background-color: var(--progressbar);
+    width: 500px;
+    height: 3px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.buffer {
+    background-color: var(--progressbar2);
+    width: 150px;
+    height: 3px;
+    border-radius: 10px;
 }
 
 /* #region responsive */
