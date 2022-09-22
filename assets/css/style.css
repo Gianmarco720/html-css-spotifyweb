@@ -29,6 +29,11 @@ body {
     height: 100vh;
 }
 
+.container {
+    width: 95%;
+    margin: auto;
+}
+
 .main_content {
     height: calc(100vh - 80px);
 }
@@ -247,10 +252,13 @@ li {
 }
 /* #endregion sidebar */
 
-.dark_blue {
+/* #region main section */
+.content_selection {
+    overflow-y: auto;
     background-color: var(--primaryback);
 }
 
+/* upgrade button */
 .upgrade {
     width: 100%;
     height: 80px;
@@ -279,10 +287,45 @@ li {
     font-size: 20px;
     padding: 20px 50px;
 }
+/* /upgrade button */
 
+/* menu navigazione */
 .navmenu {
     margin-top: 1rem;
     justify-content: center;
+}
+
+.navbar {
+    font-size: 13px;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.navbar li:first-child > a {
+    border-bottom: 2px solid var(--check);
+}
+/* /menu navigazione */
+
+/* album */
+.album h3 {
+    color: var(--light);
+    padding: 20px 0;
+}
+
+.music {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.music h4 {
+    color: var(--light);
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.music h5 {
+    color: var(--primarygrey);
+    font-size: 10px;
 }
 
 .player {
