@@ -340,11 +340,42 @@ li {
 .round_img {
     border-radius: 80px;
 }
+/* /album */
 
+/* bottom player */
 .player {
     width: 100%;
     height: 80px;
+    justify-content: space-between;
     background-color: var(--lightdark);
+}
+
+.player img {
+    padding: 15px;
+}
+
+.album_details {
+    justify-content: center;
+}
+
+.album_options {
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.player_buttons i {
+    font-size: 30px;
+}
+
+#song {
+    color: var(--light);
+    font-size: 13px;
+}
+
+#artist {
+    font-size: 12px;
 }
 
 /* #region responsive */
