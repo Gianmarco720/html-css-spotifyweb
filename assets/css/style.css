@@ -24,10 +24,22 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.wrapper {
+    height: 100vh;
+}
+
+.main_content {
+    height: calc(100vh - 80px);
+}
+
 a {
     text-decoration: none;
     color: var(--primarygrey);
     font-weight: 700;
+}
+
+a:hover {
+    color: var(--light);
 }
 
 li {
@@ -166,6 +178,10 @@ li {
     padding: 10px 0;
 }
 
+.logo_sm {
+    display: none;
+}
+
 /* sezione navbar */
 .side_functions {
     align-items: center;
@@ -247,7 +263,69 @@ li {
     border: 1px solid red;
 }
 
-.main_content {
-    height: calc(100vh - 80px);
+@media screen and (max-width: 1200px) {
+    .col_2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    .col_10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col_12 {
+        width: calc(100% / 12 * 12);
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .sidebar {
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .col_xs_1 {
+        width: calc(100% / 12 * 1);
+    }
+
+    .col_xs_11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .container_side_top {
+        align-items: center;
+        height: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .logo_sm {
+        display: inline-block;
+        width: 25px;
+        padding-top: 10px;
+    }
+
+    .logo, .house_btn,
+    .lens_btn, .library_btn,
+    .playlist {
+        display: none;
+    }
+
+    .app_dl a,
+    .user_name span {
+        display: none;
+    }
+
+    .user_name {
+        border: 0;
+    }
+
+    .user_info {
+
+    }
+
+}
