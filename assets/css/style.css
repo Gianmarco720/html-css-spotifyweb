@@ -508,12 +508,35 @@ li {
 }
 
 @media screen and (max-width: 639px) {
+    .sidebar {
+        padding: 0 0 0 10px;
+    }
+    
     .row {
         flex-wrap: wrap;
     }
 
+    .col_s_3 {
+        width: calc(100% / 12 * 3);
+    }
+
     .col_s_6 {
         width: calc(100% / 12 * 6);
+    }
+
+    .col_s_9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    .album_options {
+        justify-content: center;
+        padding: 0 0 0 20px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .control_middle {
+        width: 30%;
     }
 }
 
