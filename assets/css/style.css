@@ -383,6 +383,7 @@ li {
 .control_middle {
     flex-direction: column;
     justify-content: space-evenly;
+    width: 40%;
 }
 
 .player_buttons {
@@ -401,7 +402,7 @@ li {
 
 .time_bar {
     background-color: var(--progressbar);
-    width: 500px;
+    width: 100%;
     height: 3px;
     margin: 0 20px;
     border-radius: 10px;
@@ -416,6 +417,7 @@ li {
 
 .player_volume {
     align-items: center;
+    width: 100%;
     gap: 20px;
 }
 
