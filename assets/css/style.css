@@ -329,6 +329,18 @@ li {
     text-align: center;
 }
 
+.music:hover {
+    cursor: pointer;
+}
+
+.music img {
+    filter: brightness(100%);
+}
+
+.music img:hover {
+    filter: brightness(50%);
+}
+
 .for_you {
     padding-top: 40px;
 }
@@ -507,7 +519,7 @@ li {
     }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 640px) {
     .sidebar {
         padding: 0 0 0 10px;
     }
