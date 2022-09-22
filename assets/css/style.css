@@ -297,9 +297,19 @@ li {
     justify-content: center;
 }
 
+.navmenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navmenu ul li {
+    margin: 2%;
+}
+
 .navbar {
     font-size: 13px;
-    width: 65%;
+    width: 72%;
     justify-content: space-between;
 }
 
@@ -340,7 +350,7 @@ li {
 }
 
 .round_img {
-    border-radius: 80px;
+    border-radius: 50%;
 }
 /* /album */
 
@@ -479,10 +489,6 @@ li {
 
     .col_s_6 {
         width: calc(100% / 12 * 6);
-    }
-
-    .round_img {
-        border-radius: 120px;
     }
 }
 
