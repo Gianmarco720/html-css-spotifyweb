@@ -259,7 +259,7 @@ li {
     background-color: rgba(0, 0, 0, 0.283);
 }
 
-.upgrade_btn a {
+.upgrade_btn {
     color: var(--light);
     border: 1px solid var(--light);
     padding: 10px 40px;
@@ -267,8 +267,17 @@ li {
     border-radius: 2rem;
 }
 
-.upgrade_btn {
+.upgrade_action {
     padding-right: 10px;
+}
+
+.upgrade_action:hover {
+    padding: 0;
+}
+
+.upgrade_btn:hover {
+    font-size: 20px;
+    padding: 20px 50px;
 }
 
 .navmenu {
