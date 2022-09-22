@@ -371,8 +371,30 @@ li {
         padding-right: 5px;
     }
 
-    .navbar {
+    .row {
+        flex-wrap: wrap;
+    }
 
+    .col_md_3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .pt-30 {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col_s_6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .round_img {
+        border-radius: 120px;
     }
 }
 
