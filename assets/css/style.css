@@ -317,15 +317,28 @@ li {
     text-align: center;
 }
 
-.music h4 {
+.for_you {
+    padding-top: 40px;
+}
+
+#for_user {
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.album h4 {
     color: var(--light);
     font-size: 13px;
     padding: 10px 0;
 }
 
-.music h5 {
+.album h5 {
     color: var(--primarygrey);
     font-size: 10px;
+}
+
+.round_img {
+    border-radius: 80px;
 }
 
 .player {
@@ -350,8 +363,16 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
     .sidebar {
         padding-right: 5px;
+    }
+
+    .navbar {
+
     }
 }
 
