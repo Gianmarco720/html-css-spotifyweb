@@ -420,7 +420,7 @@ li {
 
 .buffer {
     background-color: var(--progressbar2);
-    width: 150px;
+    width: 10%;
     height: 3px;
     border-radius: 10px;
 }
@@ -479,6 +479,31 @@ li {
 
     .pt-30 {
         padding-top: 30px;
+    }
+
+    .player_volume {
+        gap: 10px;
+    }
+
+    .album_options {
+        padding: 0 0 0 20px;
+    }
+
+    .player_buttons i {
+        font-size: 20px;
+    }
+
+    .album_options i,
+    .player_volume i {
+        font-size: 15px;
+    }
+
+    .time_bar {
+        margin: 0 10px;
+    }
+
+    .player_time span {
+        font-size: 10px;
     }
 }
 
