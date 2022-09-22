@@ -414,6 +414,25 @@ li {
     border-radius: 10px;
 }
 
+.player_volume {
+    align-items: center;
+    gap: 20px;
+}
+
+.volume_bar {
+    background-color: var(--progressbar);
+    height: 3px;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.volume_level {
+    background-color: var(--progressbar2);
+    height: 3px;
+    width: 30px;
+    border-radius: 10px;
+}
 /* #region responsive */
 @media screen and (max-width: 1200px) {
     .col_2 {
