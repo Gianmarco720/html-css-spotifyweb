@@ -451,11 +451,27 @@ li {
     width: 10%;
     height: 3px;
     border-radius: 10px;
+    position: relative;
 }
 
-.buffer:hover {
+.buffer:hover,
+.volume_level:hover {
     cursor: pointer;
     background-color: var(--check);
+}
+
+.buffer:hover .buffer_dot {
+    display: block;
+}
+
+.buffer_dot {
+    position: absolute;
+    color: var(--light);
+    font-size: 13px;
+    top: -5px;
+    left: 45px;
+    bottom: 0px;
+    display: none;
 }
 
 .player_volume {
@@ -475,8 +491,13 @@ li {
 .volume_level {
     background-color: var(--progressbar2);
     height: 3px;
-    width: 30px;
+    width: 50px;
     border-radius: 10px;
+    position: relative;
+}
+
+.volume_level:hover .buffer_dot {
+    display: block;
 }
 /* #region responsive */
 @media screen and (max-width: 1200px) {
@@ -495,6 +516,14 @@ li {
     .play_album {
         top: 55px;
         left: 55px;
+    }
+
+.volume_level {
+    width: 30px;
+}
+
+    .bd_2 {
+        left: 30px;
     }
 }
 
@@ -556,6 +585,14 @@ li {
     .player_time span {
         font-size: 10px;
     }
+
+    .buffer {
+        width: 15%;
+    }
+
+    .volume_level {
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -597,6 +634,10 @@ li {
 
     .control_middle {
         width: 30%;
+    }
+
+    .buffer {
+        width: 25%;
     }
 }
 
@@ -660,6 +701,10 @@ li {
 
     .volume_level {
         width: 40%;
+    }
+
+    .buffer_dot {
+        left: 10px;
     }
 }
 /* #endregion responsive */
