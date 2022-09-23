@@ -262,12 +262,15 @@ li {
 
 /* upgrade button */
 .upgrade {
-    width: 100%;
+    width: calc(100% - 200px);
     height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.283);
-}
+    background-color: rgba(0, 0, 0, 0.4)}
 
 .upgrade_btn {
     color: var(--light);
@@ -287,13 +290,13 @@ li {
 
 .upgrade_btn:hover {
     font-size: 20px;
-    padding: 20px 50px;
+    padding: 10px 40px;
 }
 /* /upgrade button */
 
 /* menu navigazione */
 .navmenu {
-    margin-top: 1rem;
+    margin-top: 10%;
     justify-content: center;
 }
 
@@ -481,6 +484,14 @@ li {
         padding-right: 5px;
     }
 
+    .navmenu {
+        margin-top: 20%;
+    }
+
+    .upgrade {
+        width: calc(100% - 128px);
+    }
+
     .row {
         flex-wrap: wrap;
     }
@@ -528,6 +539,10 @@ li {
         flex-wrap: wrap;
     }
 
+    .upgrade {
+        width: calc(100% - 160px);
+    }
+
     .col_s_3 {
         width: calc(100% / 12 * 3);
     }
@@ -570,6 +585,10 @@ li {
         width: 100%;
         padding: 0;
         align-items: center;
+    }
+
+    .upgrade {
+        width: calc(100% - 46px);
     }
 
     .logo_sm {
