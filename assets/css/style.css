@@ -331,17 +331,30 @@ li {
     color: var(--light);
     font-size: 40px;
     position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    top: 55px;
+    left: 55px;
+    display: none;
 }
 
 .music {
     padding: 0 5px;
     text-align: center;
+}
+
+.album_cover {
     position: relative;
+}
+
+.album_cover img {
+    filter: brightness(100%);
+}
+
+.album_cover img:hover {
+    filter: brightness(60%);
+}
+
+.album_cover:hover .play_album {
+    display: block;
 }
 
 .for_you {
@@ -501,6 +514,11 @@ li {
         flex-wrap: wrap;
     }
 
+    .play_album {
+        top: 50px;
+        left: 50px;
+    }
+
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
@@ -546,6 +564,11 @@ li {
 
     .upgrade {
         width: calc(100% - 160px);
+    }
+
+    .play_album {
+        top: 90px;
+        left: 90px;
     }
 
     .col_s_3 {
@@ -623,6 +646,11 @@ li {
 
     .control_right {
         width: 25%;
+    }
+
+    .play_album {
+        top: 95px;
+        left: 95px;
     }
 
     .volume_level {
