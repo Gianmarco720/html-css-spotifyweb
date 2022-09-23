@@ -331,8 +331,8 @@ li {
     color: var(--light);
     font-size: 40px;
     position: absolute;
-    top: 55px;
-    left: 55px;
+    top: 70px;
+    left: 70px;
     display: none;
 }
 
@@ -490,6 +490,11 @@ li {
 
     .col_12 {
         width: calc(100% / 12 * 12);
+    }
+
+    .play_album {
+        top: 55px;
+        left: 55px;
     }
 }
 
